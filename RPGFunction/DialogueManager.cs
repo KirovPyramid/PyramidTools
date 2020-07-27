@@ -31,9 +31,6 @@ public class DialogueManager : MonoBehaviour
         FileStream fileStream = new FileStream(Application.streamingAssetsPath + "/XML/"+ dramaScriptName + ".xml", FileMode.Open);
         DialougDB = serializer.Deserialize(fileStream) as DialougDataBase;
         fileStream.Close();
-
-        Debug.Log(DialougDB.list[0].characterName);
-        Debug.Log(DialougDB.list[1].characterName);
     }
 
     [System.Serializable]

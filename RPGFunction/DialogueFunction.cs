@@ -39,7 +39,7 @@ public class DialogueFunction : MonoBehaviour
         AdjustCharacterPosition(0);                                             //第一Part角色位置設定
 
         LoadCharacterDialogue();                                                //載入台詞
-        //StartCoroutine(LoadAudioFile("poyo"));                                //載入聲音(先註解掉了，因為這是指定檔案載入)
+        StartCoroutine(LoadAudioFile("poyo"));                                  //載入聲音
     }
     private void Update()
     {
